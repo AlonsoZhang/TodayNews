@@ -10,6 +10,11 @@ import UIKit
 
 class MyTabBarController: UITabBarController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(tabBar.subviews)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let tabbar = UITabBar.appearance()
@@ -26,7 +31,7 @@ class MyTabBarController: UITabBarController {
         setChildViewController(HuoshanViewController(), title: "小视频", imageName: "huoshan_tabbar_32x32_", selectedImageName: "huoshan_tabbar_press_32x32_")
         setChildViewController(MineViewController(), title: "我的", imageName: "mine_tabbar_32x32_", selectedImageName: "mine_tabbar_press_32x32_")
         // tabBar 是 readonly 属性，不能直接修改，利用 KVC 把 readonly 属性的权限改过来
-        //setValue(MyTabBar(), forKey: "tabBar") 
+        setValue(MyTabBar(), forKey: "tabBar") 
     }
     
     /// 初始化子控制器
