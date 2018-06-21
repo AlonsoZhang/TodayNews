@@ -8,5 +8,7 @@ target 'TodayNews' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'HandyJSON'
-
+  pod 'Kingfisher'
+  pod 'IBAnimatable'
+  pod 'SwiftTheme'
 end

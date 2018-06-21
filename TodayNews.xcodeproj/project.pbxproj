@@ -26,6 +26,10 @@
 		E26D6F2820DB75BA00CA7678 /* MyOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F2620DB75BA00CA7678 /* MyOtherCell.xib */; };
 		E26D6F2B20DB84CC00CA7678 /* MyFisrtSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F2920DB84CC00CA7678 /* MyFisrtSectionCell.swift */; };
 		E26D6F2C20DB84CC00CA7678 /* MyFisrtSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F2A20DB84CC00CA7678 /* MyFisrtSectionCell.xib */; };
+		E26D6F3320DB94B700CA7678 /* MyConcernCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F3120DB94B700CA7678 /* MyConcernCell.swift */; };
+		E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */; };
+		E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */; };
+		E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		E26D6F2620DB75BA00CA7678 /* MyOtherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOtherCell.xib; sourceTree = "<group>"; };
 		E26D6F2920DB84CC00CA7678 /* MyFisrtSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFisrtSectionCell.swift; sourceTree = "<group>"; };
 		E26D6F2A20DB84CC00CA7678 /* MyFisrtSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFisrtSectionCell.xib; sourceTree = "<group>"; };
+		E26D6F3120DB94B700CA7678 /* MyConcernCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcernCell.swift; sourceTree = "<group>"; };
+		E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
+		E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
+		E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +270,10 @@
 				E26D6F2620DB75BA00CA7678 /* MyOtherCell.xib */,
 				E26D6F2920DB84CC00CA7678 /* MyFisrtSectionCell.swift */,
 				E26D6F2A20DB84CC00CA7678 /* MyFisrtSectionCell.xib */,
+				E26D6F3120DB94B700CA7678 /* MyConcernCell.swift */,
+				E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */,
+				E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */,
+				E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,6 +392,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26D6ECE20DB287100CA7678 /* LaunchScreen.storyboard in Resources */,
+				E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */,
+				E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */,
 				E26D6F2820DB75BA00CA7678 /* MyOtherCell.xib in Resources */,
 				E26D6F2C20DB84CC00CA7678 /* MyFisrtSectionCell.xib in Resources */,
 				E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */,
@@ -398,12 +412,16 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,12 +459,14 @@
 				E26D6F1520DB457900CA7678 /* AppDelegate.swift in Sources */,
 				E26D6F1320DB457900CA7678 /* VideoViewController.swift in Sources */,
 				E26D6F1220DB457900CA7678 /* HomeViewController.swift in Sources */,
+				E26D6F3320DB94B700CA7678 /* MyConcernCell.swift in Sources */,
 				E26D6F1A20DB457900CA7678 /* MyTabBar.swift in Sources */,
 				E26D6F1F20DB4CFD00CA7678 /* UIKit+Extension.swift in Sources */,
 				E26D6F1420DB457900CA7678 /* HuoshanViewController.swift in Sources */,
 				E26D6F2420DB716300CA7678 /* MyCellModel.swift in Sources */,
 				E26D6F2720DB75BA00CA7678 /* MyOtherCell.swift in Sources */,
 				E26D6F1920DB457900CA7678 /* MyNavigationController.swift in Sources */,
+				E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */,
 				E26D6F1720DB457900CA7678 /* MineViewController.swift in Sources */,
 				E26D6F1820DB457900CA7678 /* MyTabBarController.swift in Sources */,
 				E26D6F1C20DB4C1F00CA7678 /* Const.swift in Sources */,
