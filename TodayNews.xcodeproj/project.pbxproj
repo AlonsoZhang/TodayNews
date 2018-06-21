@@ -12,6 +12,12 @@
 		E26D6EC920DB286E00CA7678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26D6EC720DB286E00CA7678 /* Main.storyboard */; };
 		E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26D6ECA20DB287100CA7678 /* Assets.xcassets */; };
 		E26D6ECE20DB287100CA7678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26D6ECC20DB287100CA7678 /* LaunchScreen.storyboard */; };
+		E26D6ED620DB2EDA00CA7678 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6ED520DB2EDA00CA7678 /* MyTabBarController.swift */; };
+		E26D6EDB20DB2F7900CA7678 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6EDA20DB2F7900CA7678 /* MyNavigationController.swift */; };
+		E26D6EE020DB31DB00CA7678 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6EDF20DB31DB00CA7678 /* HomeViewController.swift */; };
+		E26D6EE420DB320A00CA7678 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6EE320DB320A00CA7678 /* VideoViewController.swift */; };
+		E26D6EE820DB325800CA7678 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6EE720DB325800CA7678 /* HuoshanViewController.swift */; };
+		E26D6EEC20DB32B700CA7678 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6EEB20DB32B700CA7678 /* MineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		E26D6ECA20DB287100CA7678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26D6ECD20DB287100CA7678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E26D6ECF20DB287100CA7678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26D6ED520DB2EDA00CA7678 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		E26D6EDA20DB2F7900CA7678 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		E26D6EDF20DB31DB00CA7678 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E26D6EE320DB320A00CA7678 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		E26D6EE720DB325800CA7678 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
+		E26D6EEB20DB32B700CA7678 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		E26D6EC220DB286E00CA7678 /* TodayNews */ = {
 			isa = PBXGroup;
 			children = (
+				E26D6ED720DB2F2500CA7678 /* Classes */,
 				E26D6EC320DB286E00CA7678 /* AppDelegate.swift */,
 				E26D6EC520DB286E00CA7678 /* ViewController.swift */,
 				E26D6EC720DB286E00CA7678 /* Main.storyboard */,
@@ -62,6 +75,99 @@
 				E26D6ECF20DB287100CA7678 /* Info.plist */,
 			);
 			path = TodayNews;
+			sourceTree = "<group>";
+		};
+		E26D6ED720DB2F2500CA7678 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EDD20DB31AD00CA7678 /* Home */,
+				E26D6EE120DB31ED00CA7678 /* Video */,
+				E26D6EE520DB323900CA7678 /* Huoshan */,
+				E26D6EE920DB326D00CA7678 /* Mine */,
+				E26D6ED820DB2F3B00CA7678 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E26D6ED820DB2F3B00CA7678 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6ED920DB2F4B00CA7678 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E26D6ED920DB2F4B00CA7678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6ED520DB2EDA00CA7678 /* MyTabBarController.swift */,
+				E26D6EDA20DB2F7900CA7678 /* MyNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E26D6EDD20DB31AD00CA7678 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EDE20DB31B800CA7678 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E26D6EDE20DB31B800CA7678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EDF20DB31DB00CA7678 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E26D6EE120DB31ED00CA7678 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EE220DB31F700CA7678 /* Controller */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		E26D6EE220DB31F700CA7678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EE320DB320A00CA7678 /* VideoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E26D6EE520DB323900CA7678 /* Huoshan */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EE620DB324300CA7678 /* Controller */,
+			);
+			path = Huoshan;
+			sourceTree = "<group>";
+		};
+		E26D6EE620DB324300CA7678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EE720DB325800CA7678 /* HuoshanViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E26D6EE920DB326D00CA7678 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EEA20DB327500CA7678 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		E26D6EEA20DB327500CA7678 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E26D6EEB20DB32B700CA7678 /* MineViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26D6EE020DB31DB00CA7678 /* HomeViewController.swift in Sources */,
 				E26D6EC620DB286E00CA7678 /* ViewController.swift in Sources */,
+				E26D6EE420DB320A00CA7678 /* VideoViewController.swift in Sources */,
+				E26D6EEC20DB32B700CA7678 /* MineViewController.swift in Sources */,
+				E26D6EE820DB325800CA7678 /* HuoshanViewController.swift in Sources */,
+				E26D6EDB20DB2F7900CA7678 /* MyNavigationController.swift in Sources */,
 				E26D6EC420DB286E00CA7678 /* AppDelegate.swift in Sources */,
+				E26D6ED620DB2EDA00CA7678 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
