@@ -111,6 +111,8 @@
                 <outlet property="leftLabel" destination="eWp-2T-fj6" id="6hL-Rt-ehw"/>
                 <outlet property="rightImageView" destination="4bE-Ej-RXH" id="IGi-gu-Iq5"/>
                 <outlet property="rightLabel" destination="2Ps-SN-yUf" id="WBA-P1-7i3"/>
+                <outlet property="separatorView" destination="Lsj-FX-kJu" id="M9F-Uz-Xsf"/>
+                <outlet property="topView" destination="pFj-Za-UVB" id="ofp-7Z-LrP"/>
             </connections>
             <point key="canvasLocation" x="32" y="124.5"/>
         </tableViewCell>

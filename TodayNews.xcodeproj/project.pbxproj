@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		71AD87A1136F774B1BE3162F /* Pods_TodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C52817112313373E66CD675 /* Pods_TodayNews.framework */; };
+		E209A87920DC9C39004A07C9 /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A87820DC9C39004A07C9 /* MyTheme.swift */; };
+		E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = E209A87F20DC9D9B004A07C9 /* night_theme.plist */; };
+		E209A88220DC9D9B004A07C9 /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = E209A88020DC9D9B004A07C9 /* default_theme.plist */; };
 		E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26D6ECA20DB287100CA7678 /* Assets.xcassets */; };
 		E26D6ECE20DB287100CA7678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26D6ECC20DB287100CA7678 /* LaunchScreen.storyboard */; };
 		E26D6F1220DB457900CA7678 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6EF620DB457900CA7678 /* HomeViewController.swift */; };
@@ -36,6 +39,9 @@
 		38229071397AAEAB1FE6EC33 /* Pods-TodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.release.xcconfig"; sourceTree = "<group>"; };
 		3C52817112313373E66CD675 /* Pods_TodayNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95FAB5EE703D3AD4C6AE70D /* Pods-TodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.debug.xcconfig"; sourceTree = "<group>"; };
+		E209A87820DC9C39004A07C9 /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTheme.swift; path = TodayNews/Classes/Main/Controller/MyTheme.swift; sourceTree = SOURCE_ROOT; };
+		E209A87F20DC9D9B004A07C9 /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
+		E209A88020DC9D9B004A07C9 /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = default_theme.plist; path = "../../../../../../Downloads/TodayNews-master/News/News/Classes/Others/Theme/default_theme.plist"; sourceTree = "<group>"; };
 		E26D6EC020DB286E00CA7678 /* TodayNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D6ECA20DB287100CA7678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26D6ECD20DB287100CA7678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +95,15 @@
 				3C52817112313373E66CD675 /* Pods_TodayNews.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E209A87A20DC9D2E004A07C9 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E209A88020DC9D9B004A07C9 /* default_theme.plist */,
+				E209A87F20DC9D9B004A07C9 /* night_theme.plist */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		E26D6EB720DB286E00CA7678 = {
@@ -231,6 +246,7 @@
 		E26D6F0320DB457900CA7678 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				E209A87A20DC9D2E004A07C9 /* Theme */,
 				E26D6F0420DB457900CA7678 /* AppDelegate.swift */,
 				E26D6F0520DB457900CA7678 /* Info.plist */,
 				E26D6F1B20DB4C1F00CA7678 /* Const.swift */,
@@ -327,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				E26D6F2120DB6B4100CA7678 /* NetworkTool.swift */,
+				E209A87820DC9C39004A07C9 /* MyTheme.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -395,6 +412,8 @@
 				E26D6ECE20DB287100CA7678 /* LaunchScreen.storyboard in Resources */,
 				E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */,
 				E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */,
+				E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */,
+				E209A88220DC9D9B004A07C9 /* default_theme.plist in Resources */,
 				E26D6F2820DB75BA00CA7678 /* MyOtherCell.xib in Resources */,
 				E26D6F2C20DB84CC00CA7678 /* MyFisrtSectionCell.xib in Resources */,
 				E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */,
@@ -486,6 +505,7 @@
 				E26D6F1920DB457900CA7678 /* MyNavigationController.swift in Sources */,
 				E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */,
 				E26D6F1720DB457900CA7678 /* MineViewController.swift in Sources */,
+				E209A87920DC9C39004A07C9 /* MyTheme.swift in Sources */,
 				E26D6F1820DB457900CA7678 /* MyTabBarController.swift in Sources */,
 				E26D6F1C20DB4C1F00CA7678 /* Const.swift in Sources */,
 			);
@@ -628,13 +648,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/IBAnimatable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftTheme\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,13 +692,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/IBAnimatable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftTheme\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

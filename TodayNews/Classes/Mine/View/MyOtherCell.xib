@@ -66,6 +66,7 @@
                 <outlet property="leftLabel" destination="4W3-Dk-hOf" id="kdF-eK-bKq"/>
                 <outlet property="rightImageView" destination="VDd-dk-foV" id="can-BY-SKg"/>
                 <outlet property="rightLabel" destination="P1y-a2-tmw" id="Lfq-Zd-LOY"/>
+                <outlet property="separatorView" destination="7WS-Bz-Goc" id="ClK-id-NXR"/>
             </connections>
         </tableViewCell>
     </objects>

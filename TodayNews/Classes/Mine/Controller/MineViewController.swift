@@ -22,14 +22,14 @@ class MineViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "navigation_background_white" + (UserDefaults.standard.bool(forKey: isNight) ? "_night" : "")), for: .default)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "navigation_background_white" + (UserDefaults.standard.bool(forKey: isNight) ? "_night" : "")), for: .default)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         tableView.tableHeaderView = headerView
-        tableView.backgroundColor = UIColor.globalBackgroundColor()
+        tableView.theme_backgroundColor = "colors.tableViewBackgroundColor"
         tableView.separatorStyle = .none
         tableView.ym_registerCell(cell: MyFisrtSectionCell.self)
         tableView.ym_registerCell(cell: MyOtherCell.self)
@@ -65,7 +65,7 @@ extension MineViewController {
     // 每组头部视图
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 10))
-        view.backgroundColor = UIColor.globalBackgroundColor()
+        view.theme_backgroundColor = "colors.tableViewBackgroundColor"
         return view
     }
     // 行高
