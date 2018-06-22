@@ -140,6 +140,7 @@
                 <outlet property="stackView" destination="wGC-gz-KpZ" id="lse-Sw-X3W"/>
                 <outlet property="wechatButton" destination="8Xt-L2-WjA" id="NrY-Eb-uui"/>
             </connections>
+            <point key="canvasLocation" x="32.5" y="63"/>
         </view>
     </objects>
     <resources>

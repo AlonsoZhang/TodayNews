@@ -342,7 +342,8 @@
 				E26D6EBC20DB286E00CA7678 /* Sources */,
 				E26D6EBD20DB286E00CA7678 /* Frameworks */,
 				E26D6EBE20DB286E00CA7678 /* Resources */,
-				D7BA9BDD55D0CC0EAD9E54AE /* [CP] Embed Pods Frameworks */,
+				A7FEBFA70F27A6DB3F574CE7 /* [CP] Embed Pods Frameworks */,
+				A4E9A6676BBD374247467D9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -403,7 +404,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D7BA9BDD55D0CC0EAD9E54AE /* [CP] Embed Pods Frameworks */ = {
+		A4E9A6676BBD374247467D9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7FEBFA70F27A6DB3F574CE7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,6 +430,7 @@
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -422,6 +439,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,10 +627,34 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IBAnimatable\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftTheme\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IBAnimatable\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"SwiftTheme\"",
+					"-framework",
+					"\"SwiftyJSON\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zhangwu.tech.TodayNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -629,10 +671,34 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LP5KW6GHL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IBAnimatable\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftTheme\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IBAnimatable\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"SwiftTheme\"",
+					"-framework",
+					"\"SwiftyJSON\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zhangwu.tech.TodayNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";

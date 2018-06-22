@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE785509957F659AFB4FAE0D46F0A35F"
-               BuildableName = "IBAnimatable.framework"
-               BlueprintName = "IBAnimatable"
+               BlueprintIdentifier = "577411A70B6C469AFC9B920C69D9F929"
+               BuildableName = "SwiftTheme.framework"
+               BlueprintName = "SwiftTheme"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE785509957F659AFB4FAE0D46F0A35F"
-            BuildableName = "IBAnimatable.framework"
-            BlueprintName = "IBAnimatable"
+            BlueprintIdentifier = "577411A70B6C469AFC9B920C69D9F929"
+            BuildableName = "SwiftTheme.framework"
+            BlueprintName = "SwiftTheme"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
