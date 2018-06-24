@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class MineViewController: UITableViewController {
 
+    private let disposeBag = DisposeBag()
     // 存储 cell的数据
     var sections = [[MyCellModel]]()
     // 存储我的关注数据
@@ -27,6 +30,7 @@ class MineViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.tableFooterView = UIView()
         tableView.tableHeaderView = headerView
         tableView.theme_backgroundColor = "colors.tableViewBackgroundColor"
@@ -43,6 +47,14 @@ class MineViewController: UITableViewController {
                 self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
             })
         }
+        /// 更多按钮点击
+        headerView.moreLoginButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                let moreLoginVC = MoreLoginViewController.loadStoryboard()
+                moreLoginVC.modalSize = (width: .full, height: .custom(size: Float(screenHeight - (isIPhoneX ? 44 : 20))))
+                self!.present(moreLoginVC, animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
     }
     
     /// 懒加载 头部

@@ -11,5 +11,7 @@ target 'TodayNews' do
   pod 'IBAnimatable'
   pod 'Kingfisher'
   pod 'SwiftTheme'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 end

@@ -25,3 +25,5 @@ let iid: Int = 5034850950
 let kMyHeaderViewHeight: CGFloat = 280
 
 let isNight = "isNight"
+
+let isIPhoneX: Bool = screenHeight == 812 ? true : false
