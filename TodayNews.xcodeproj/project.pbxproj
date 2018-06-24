@@ -10,9 +10,9 @@
 		71AD87A1136F774B1BE3162F /* Pods_TodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C52817112313373E66CD675 /* Pods_TodayNews.framework */; };
 		E209A87920DC9C39004A07C9 /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A87820DC9C39004A07C9 /* MyTheme.swift */; };
 		E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = E209A87F20DC9D9B004A07C9 /* night_theme.plist */; };
-		E209A88220DC9D9B004A07C9 /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = E209A88020DC9D9B004A07C9 /* default_theme.plist */; };
 		E209A88420DCD947004A07C9 /* MoreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A88320DCD947004A07C9 /* MoreLoginViewController.swift */; };
 		E209A88620DCD967004A07C9 /* MoreLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E209A88520DCD967004A07C9 /* MoreLoginViewController.storyboard */; };
+		E25193E620DFB67500AF8B62 /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = E25193E520DFB67500AF8B62 /* default_theme.plist */; };
 		E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26D6ECA20DB287100CA7678 /* Assets.xcassets */; };
 		E26D6ECE20DB287100CA7678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26D6ECC20DB287100CA7678 /* LaunchScreen.storyboard */; };
 		E26D6F1220DB457900CA7678 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6EF620DB457900CA7678 /* HomeViewController.swift */; };
@@ -43,9 +43,9 @@
 		C95FAB5EE703D3AD4C6AE70D /* Pods-TodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.debug.xcconfig"; sourceTree = "<group>"; };
 		E209A87820DC9C39004A07C9 /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTheme.swift; path = TodayNews/Classes/Main/Controller/MyTheme.swift; sourceTree = SOURCE_ROOT; };
 		E209A87F20DC9D9B004A07C9 /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
-		E209A88020DC9D9B004A07C9 /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = default_theme.plist; path = "../../../../../../Downloads/TodayNews-master/News/News/Classes/Others/Theme/default_theme.plist"; sourceTree = "<group>"; };
 		E209A88320DCD947004A07C9 /* MoreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginViewController.swift; sourceTree = "<group>"; };
 		E209A88520DCD967004A07C9 /* MoreLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreLoginViewController.storyboard; sourceTree = "<group>"; };
+		E25193E520DFB67500AF8B62 /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
 		E26D6EC020DB286E00CA7678 /* TodayNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26D6ECA20DB287100CA7678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26D6ECD20DB287100CA7678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		E209A87A20DC9D2E004A07C9 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				E209A88020DC9D9B004A07C9 /* default_theme.plist */,
+				E25193E520DFB67500AF8B62 /* default_theme.plist */,
 				E209A87F20DC9D9B004A07C9 /* night_theme.plist */,
 			);
 			path = Theme;
@@ -419,7 +419,7 @@
 				E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */,
 				E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */,
 				E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */,
-				E209A88220DC9D9B004A07C9 /* default_theme.plist in Resources */,
+				E25193E620DFB67500AF8B62 /* default_theme.plist in Resources */,
 				E26D6F2820DB75BA00CA7678 /* MyOtherCell.xib in Resources */,
 				E26D6F2C20DB84CC00CA7678 /* MyFisrtSectionCell.xib in Resources */,
 				E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */,
