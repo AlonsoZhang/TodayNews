@@ -35,6 +35,9 @@
 		E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */; };
 		E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */; };
 		E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */; };
+		E2E4A9E220E4B93E0048DE10 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */; };
+		E2E4A9E420E4BF280048DE10 /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2E4A9E320E4BF280048DE10 /* settingPlist.plist */; };
+		E2E4A9E620E4C0500048DE10 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E520E4C0500048DE10 /* SettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
 		E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
+		E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E2E4A9E320E4BF280048DE10 /* settingPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
+		E2E4A9E520E4C0500048DE10 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,7 @@
 				E26D6F0420DB457900CA7678 /* AppDelegate.swift */,
 				E26D6F0520DB457900CA7678 /* Info.plist */,
 				E26D6F1B20DB4C1F00CA7678 /* Const.swift */,
+				E2E4A9E320E4BF280048DE10 /* settingPlist.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 				E26D6F0820DB457900CA7678 /* MineViewController.swift */,
 				E209A88320DCD947004A07C9 /* MoreLoginViewController.swift */,
 				E209A88520DCD967004A07C9 /* MoreLoginViewController.storyboard */,
+				E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +289,8 @@
 		E26D6F0920DB457900CA7678 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E26D6F2320DB716300CA7678 /* MyCellModel.swift */,
+				E2E4A9E520E4C0500048DE10 /* SettingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,7 +334,6 @@
 		E26D6F0F20DB457900CA7678 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E26D6F2320DB716300CA7678 /* MyCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 				E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */,
 				E25193E620DFB67500AF8B62 /* default_theme.plist in Resources */,
 				E26D6F2820DB75BA00CA7678 /* MyOtherCell.xib in Resources */,
+				E2E4A9E420E4BF280048DE10 /* settingPlist.plist in Resources */,
 				E26D6F2C20DB84CC00CA7678 /* MyFisrtSectionCell.xib in Resources */,
 				E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */,
 				E209A88620DCD967004A07C9 /* MoreLoginViewController.storyboard in Resources */,
@@ -502,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E4A9E620E4C0500048DE10 /* SettingModel.swift in Sources */,
 				E26D6F2B20DB84CC00CA7678 /* MyFisrtSectionCell.swift in Sources */,
 				E26D6F2220DB6B4100CA7678 /* NetworkTool.swift in Sources */,
 				E26D6F1520DB457900CA7678 /* AppDelegate.swift in Sources */,
@@ -518,6 +529,7 @@
 				E209A88420DCD947004A07C9 /* MoreLoginViewController.swift in Sources */,
 				E26D6F1720DB457900CA7678 /* MineViewController.swift in Sources */,
 				E209A87920DC9C39004A07C9 /* MyTheme.swift in Sources */,
+				E2E4A9E220E4B93E0048DE10 /* SettingViewController.swift in Sources */,
 				E26D6F1820DB457900CA7678 /* MyTabBarController.swift in Sources */,
 				E26D6F1C20DB4C1F00CA7678 /* Const.swift in Sources */,
 			);
@@ -669,7 +681,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -710,7 +725,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TodayNews/Classes/Others/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

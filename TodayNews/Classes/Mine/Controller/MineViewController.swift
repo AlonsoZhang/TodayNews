@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 
 class MineViewController: UITableViewController {
-
+    
     private let disposeBag = DisposeBag()
     // 存储 cell的数据
     var sections = [[MyCellModel]]()
@@ -63,7 +63,7 @@ class MineViewController: UITableViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
@@ -87,6 +87,7 @@ extension MineViewController {
         }
         return 40
     }
+    
     // 组数
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
@@ -99,17 +100,20 @@ extension MineViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 && indexPath.row == 0 {
             let cell = tableView.ym_dequeueReusableCell(indexPath: indexPath) as MyFisrtSectionCell
-            let section = sections[indexPath.section]
-            cell.myCellModel = section[indexPath.row]
+            cell.myCellModel = sections[indexPath.section][indexPath.row]
             cell.collectionView.isHidden = (concerns.count == 0 || concerns.count == 1)
             if concerns.count == 1 { cell.myConcern = concerns[0] }
             if concerns.count > 1 { cell.myConcerns = concerns }
-            
+//            cell.myConcernSelected = { [weak self] in
+//                //                let userDetailVC = UserDetailViewController()
+//                let userDetailVC = UserDetailViewController2()
+//                userDetailVC.userId = $0.userid
+//                self?.navigationController?.pushViewController(userDetailVC, animated: true)
+//            }
             return cell
         }
         let cell = tableView.ym_dequeueReusableCell(indexPath: indexPath) as MyOtherCell
-        let section = sections[indexPath.section]
-        let myCellModel = section[indexPath.row]
+        let myCellModel = sections[indexPath.section][indexPath.row]
         cell.leftLabel.text = myCellModel.text
         cell.rightLabel.text = myCellModel.grey_text
         return cell
@@ -117,11 +121,11 @@ extension MineViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        if indexPath.section == 3 && indexPath.row == 1 { // 跳转到系统设置界面
-//            let settingVC = SettingViewController()
-//            settingVC.navigationItem.title = "设置"
-//            navigationController?.pushViewController(settingVC, animated: true)
-//        }
+        if indexPath.section == 3 && indexPath.row == 1 { // 跳转到系统设置界面
+            let settingVC = SettingViewController()
+            settingVC.navigationItem.title = "设置"
+            navigationController?.pushViewController(settingVC, animated: true)
+        }
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
