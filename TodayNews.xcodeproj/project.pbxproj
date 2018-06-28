@@ -38,6 +38,8 @@
 		E2E4A9E220E4B93E0048DE10 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */; };
 		E2E4A9E420E4BF280048DE10 /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2E4A9E320E4BF280048DE10 /* settingPlist.plist */; };
 		E2E4A9E620E4C0500048DE10 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E520E4C0500048DE10 /* SettingModel.swift */; };
+		E2F3DC7E20E4E28200558FF8 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3DC7C20E4E28200558FF8 /* SettingCell.swift */; };
+		E2F3DC7F20E4E28200558FF8 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F3DC7D20E4E28200558FF8 /* SettingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E2E4A9E320E4BF280048DE10 /* settingPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
 		E2E4A9E520E4C0500048DE10 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		E2F3DC7C20E4E28200558FF8 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		E2F3DC7D20E4E28200558FF8 /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +310,8 @@
 				E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */,
 				E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */,
 				E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */,
+				E2F3DC7C20E4E28200558FF8 /* SettingCell.swift */,
+				E2F3DC7D20E4E28200558FF8 /* SettingCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 			files = (
 				E26D6ECE20DB287100CA7678 /* LaunchScreen.storyboard in Resources */,
 				E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */,
+				E2F3DC7F20E4E28200558FF8 /* SettingCell.xib in Resources */,
 				E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */,
 				E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */,
 				E25193E620DFB67500AF8B62 /* default_theme.plist in Resources */,
@@ -523,6 +530,7 @@
 				E26D6F1F20DB4CFD00CA7678 /* UIKit+Extension.swift in Sources */,
 				E26D6F1420DB457900CA7678 /* HuoshanViewController.swift in Sources */,
 				E26D6F2420DB716300CA7678 /* MyCellModel.swift in Sources */,
+				E2F3DC7E20E4E28200558FF8 /* SettingCell.swift in Sources */,
 				E26D6F2720DB75BA00CA7678 /* MyOtherCell.swift in Sources */,
 				E26D6F1920DB457900CA7678 /* MyNavigationController.swift in Sources */,
 				E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */,
