@@ -21,6 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hB-FV-ewV">
                                 <rect key="frame" x="71" y="339" width="15" height="22"/>
                                 <state key="normal" image="details_choose_ok_icon_15x15_"/>
+                                <connections>
+                                    <action selector="readButton:" destination="njz-ba-FwZ" eventType="touchUpInside" id="ZFA-RE-K4w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L44-ZH-XcC">
                                 <rect key="frame" x="147" y="387" width="80" height="28"/>
@@ -28,6 +31,9 @@
                                 <state key="normal" title="帐号密码登录">
                                     <color key="titleColor" red="0.28235294119999998" green="0.41960784309999999" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginModeButtonCicked:" destination="njz-ba-FwZ" eventType="touchUpInside" id="7v7-hU-Xsn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录你的头条，精彩永不消失" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rn-JG-gm9">
                                 <rect key="frame" x="0.0" y="102" width="375" height="21.5"/>
@@ -261,6 +267,27 @@
                             <real key="value" value="15"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="enterTouTiaoButton" destination="eel-jz-6eN" id="RYB-Ar-Zav"/>
+                        <outlet property="findPasswordButton" destination="Xss-nq-w92" id="k7e-1O-pSv"/>
+                        <outlet property="findPasswordView" destination="Fhh-ub-bON" id="wMN-1S-a1c"/>
+                        <outlet property="loginCloseButton" destination="w9J-3j-xcE" id="YN4-84-X98"/>
+                        <outlet property="loginModeButton" destination="L44-ZH-XcC" id="Ka2-ix-sqH"/>
+                        <outlet property="mailLoginButton" destination="X5i-I9-9pN" id="CNU-hy-mEU"/>
+                        <outlet property="middleTipLabel" destination="JqE-KA-ELY" id="Pp3-qn-Zpf"/>
+                        <outlet property="mobileTextField" destination="OVi-Ye-GBy" id="x3p-PA-dMM"/>
+                        <outlet property="mobileView" destination="LZv-jf-qov" id="us8-88-tmb"/>
+                        <outlet property="passwordtextField" destination="PYi-lA-F8A" id="1So-Kc-hMw"/>
+                        <outlet property="passwrodView" destination="jvl-MJ-643" id="PKr-JT-0ia"/>
+                        <outlet property="qqLoginButton" destination="lxw-o1-UQw" id="87F-Fu-sWf"/>
+                        <outlet property="readButton" destination="0hB-FV-ewV" id="e6V-tW-h6Y"/>
+                        <outlet property="readLabel" destination="jLx-AS-GMI" id="kyC-RE-pQZ"/>
+                        <outlet property="sendVerifyButton" destination="Jku-PC-BEs" id="GDo-7a-4YR"/>
+                        <outlet property="sendVerifyView" destination="8pS-7J-4SZ" id="2Tp-ei-bOp"/>
+                        <outlet property="tianyiLoginButton" destination="cnp-Zh-zeE" id="gpb-Qp-fUO"/>
+                        <outlet property="topLabel" destination="0Rn-JG-gm9" id="OF3-mG-cey"/>
+                        <outlet property="wechatLoginButton" destination="h3E-er-1pp" id="2d1-dT-q6b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8R2-gv-78G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
