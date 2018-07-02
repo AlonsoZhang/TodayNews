@@ -35,6 +35,12 @@
 		E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */; };
 		E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */; };
 		E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */; };
+		E2ABC18820E9B41E00B1E614 /* OfflineDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */; };
+		E2ABC18B20E9B4EE00B1E614 /* OfflineDownlaodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABC18920E9B4EE00B1E614 /* OfflineDownlaodCell.swift */; };
+		E2ABC18C20E9B4EE00B1E614 /* OfflineDownlaodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2ABC18A20E9B4EE00B1E614 /* OfflineDownlaodCell.xib */; };
+		E2ABC18E20E9B80B00B1E614 /* HomeNewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABC18D20E9B80B00B1E614 /* HomeNewsTitle.swift */; };
+		E2ABC19020EA0B8600B1E614 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABC18F20EA0B8600B1E614 /* SQLiteManager.swift */; };
+		E2ABC19420EA0BEA00B1E614 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ABC19320EA0BEA00B1E614 /* libsqlite3.0.tbd */; };
 		E2E4A9E220E4B93E0048DE10 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */; };
 		E2E4A9E420E4BF280048DE10 /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2E4A9E320E4BF280048DE10 /* settingPlist.plist */; };
 		E2E4A9E620E4C0500048DE10 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E520E4C0500048DE10 /* SettingModel.swift */; };
@@ -75,6 +81,13 @@
 		E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
 		E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
+		E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownloadController.swift; sourceTree = "<group>"; };
+		E2ABC18920E9B4EE00B1E614 /* OfflineDownlaodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownlaodCell.swift; sourceTree = "<group>"; };
+		E2ABC18A20E9B4EE00B1E614 /* OfflineDownlaodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfflineDownlaodCell.xib; sourceTree = "<group>"; };
+		E2ABC18D20E9B80B00B1E614 /* HomeNewsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTitle.swift; sourceTree = "<group>"; };
+		E2ABC18F20EA0B8600B1E614 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		E2ABC19120EA0BDB00B1E614 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2ABC19320EA0BEA00B1E614 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E2E4A9E320E4BF280048DE10 /* settingPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
 		E2E4A9E520E4C0500048DE10 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
@@ -87,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2ABC19420EA0BEA00B1E614 /* libsqlite3.0.tbd in Frameworks */,
 				71AD87A1136F774B1BE3162F /* Pods_TodayNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +120,8 @@
 		C20A899F2E0AAC5F86E4B029 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2ABC19320EA0BEA00B1E614 /* libsqlite3.0.tbd */,
+				E2ABC19120EA0BDB00B1E614 /* SQLite.framework */,
 				3C52817112313373E66CD675 /* Pods_TodayNews.framework */,
 			);
 			name = Frameworks;
@@ -182,6 +198,7 @@
 		E26D6EF720DB457900CA7678 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2ABC18D20E9B80B00B1E614 /* HomeNewsTitle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +303,7 @@
 				E209A88320DCD947004A07C9 /* MoreLoginViewController.swift */,
 				E209A88520DCD967004A07C9 /* MoreLoginViewController.storyboard */,
 				E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */,
+				E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +330,8 @@
 				E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */,
 				E2F3DC7C20E4E28200558FF8 /* SettingCell.swift */,
 				E2F3DC7D20E4E28200558FF8 /* SettingCell.xib */,
+				E2ABC18920E9B4EE00B1E614 /* OfflineDownlaodCell.swift */,
+				E2ABC18A20E9B4EE00B1E614 /* OfflineDownlaodCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,6 +385,7 @@
 			children = (
 				E26D6F2120DB6B4100CA7678 /* NetworkTool.swift */,
 				E209A87820DC9C39004A07C9 /* MyTheme.swift */,
+				E2ABC18F20EA0B8600B1E614 /* SQLiteManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -437,6 +458,7 @@
 				E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */,
 				E25193E620DFB67500AF8B62 /* default_theme.plist in Resources */,
 				E26D6F2820DB75BA00CA7678 /* MyOtherCell.xib in Resources */,
+				E2ABC18C20E9B4EE00B1E614 /* OfflineDownlaodCell.xib in Resources */,
 				E2E4A9E420E4BF280048DE10 /* settingPlist.plist in Resources */,
 				E26D6F2C20DB84CC00CA7678 /* MyFisrtSectionCell.xib in Resources */,
 				E26D6ECB20DB287100CA7678 /* Assets.xcassets in Resources */,
@@ -460,6 +482,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -471,6 +494,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -525,9 +549,11 @@
 				E26D6F1520DB457900CA7678 /* AppDelegate.swift in Sources */,
 				E26D6F1320DB457900CA7678 /* VideoViewController.swift in Sources */,
 				E26D6F1220DB457900CA7678 /* HomeViewController.swift in Sources */,
+				E2ABC18E20E9B80B00B1E614 /* HomeNewsTitle.swift in Sources */,
 				E26D6F3320DB94B700CA7678 /* MyConcernCell.swift in Sources */,
 				E26D6F1A20DB457900CA7678 /* MyTabBar.swift in Sources */,
 				E26D6F1F20DB4CFD00CA7678 /* UIKit+Extension.swift in Sources */,
+				E2ABC18820E9B41E00B1E614 /* OfflineDownloadController.swift in Sources */,
 				E26D6F1420DB457900CA7678 /* HuoshanViewController.swift in Sources */,
 				E26D6F2420DB716300CA7678 /* MyCellModel.swift in Sources */,
 				E2F3DC7E20E4E28200558FF8 /* SettingCell.swift in Sources */,
@@ -539,7 +565,9 @@
 				E209A87920DC9C39004A07C9 /* MyTheme.swift in Sources */,
 				E2E4A9E220E4B93E0048DE10 /* SettingViewController.swift in Sources */,
 				E26D6F1820DB457900CA7678 /* MyTabBarController.swift in Sources */,
+				E2ABC19020EA0B8600B1E614 /* SQLiteManager.swift in Sources */,
 				E26D6F1C20DB4C1F00CA7678 /* Const.swift in Sources */,
+				E2ABC18B20E9B4EE00B1E614 /* OfflineDownlaodCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

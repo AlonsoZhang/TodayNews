@@ -70,7 +70,7 @@ class SettingViewController: UITableViewController {
             }
         case 1:
             if indexPath.row == 0 {  // 离线下载
-                //navigationController?.pushViewController(OfflineDownloadController(), animated: true)
+                navigationController?.pushViewController(OfflineDownloadController(), animated: true)
             }
         default: break
         }
