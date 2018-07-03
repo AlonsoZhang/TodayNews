@@ -163,19 +163,19 @@
 		<string>#717171</string>
 		<key>lightGray</key>
 		<string>#717171</string>
-		<key>currentPageIndicatorTintColor</key>
-		<string>#f9f9fb</string>
 		<key>pageIndicatorTintColor</key>
 		<string>#464646</string>
+		<key>currentPageIndicatorTintColor</key>
+		<string>#f9f9fb</string>
+		<key>windowColor</key>
+		<string>#651413</string>
+		<key>grayColor230</key>
+		<string>#717171</string>
 		<key>grayColor210</key>
 		<string>#717171</string>
 		<key>grayColor247</key>
 		<string>#717171</string>
-		<key>windowColor</key>
-		<string>#651413</string>
 		<key>grayColor240</key>
-		<string>#717171</string>
-		<key>grayColor230</key>
 		<string>#717171</string>
 		<key>grayColor150</key>
 		<string>#717171</string>

@@ -85,8 +85,8 @@ extension SettingCell {
     func setupNetworkAlertController() {
         let alertController = UIAlertController(title: "非 WiFi 网络流量", message: nil, preferredStyle: .actionSheet)
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-        let bestAction = UIAlertAction(title: "最小效果(下载大图)", style: .default, handler: { (_) in
-            self.rightTitleLabel.text = "最小效果(下载大图)"
+        let bestAction = UIAlertAction(title: "最佳效果(下载大图)", style: .default, handler: { (_) in
+            self.rightTitleLabel.text = "最佳效果(下载大图)"
         })
         let betterAction = UIAlertAction(title: "较省流量(智能下图)", style: .default, handler: { (_) in
             self.rightTitleLabel.text = "较省流量(智能下图)"

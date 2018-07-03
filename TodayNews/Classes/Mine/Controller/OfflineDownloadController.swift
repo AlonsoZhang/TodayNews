@@ -69,4 +69,21 @@ extension OfflineDownloadController {
         cell.rightImageView.theme_image = newsTitle.selected ? "images.air_download_option_press" : "images.air_download_option"
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 取出数组中的第 row 个对象
+        var homeNewsTitle = titles[indexPath.row]
+        // 取反
+        homeNewsTitle.selected = !homeNewsTitle.selected
+        // 取出 第 row 个 cell
+        let cell = tableView.cellForRow(at: indexPath) as! OfflineDownlaodCell
+        // 改变 cell 的图片
+        cell.rightImageView.theme_image = homeNewsTitle.selected ? "images.air_download_option_press" : "images.air_download_option"
+        // 替换数组中的数据
+        titles[indexPath.row] = homeNewsTitle
+        // 更新数据库中的数据
+        NewsTitleTable().update(homeNewsTitle)
+        tableView.reloadRows(at: [indexPath], with: .none)
+        //tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
