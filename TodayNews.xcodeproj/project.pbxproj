@@ -35,6 +35,8 @@
 		E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */; };
 		E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */; };
 		E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */; };
+		E2AAADF920EB41F9009ED55F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAADF720EB41F9009ED55F /* UserDetailViewController.swift */; };
+		E2AAADFA20EB41F9009ED55F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AAADF820EB41F9009ED55F /* UserDetailViewController.xib */; };
 		E2ABC18820E9B41E00B1E614 /* OfflineDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */; };
 		E2ABC18B20E9B4EE00B1E614 /* OfflineDownlaodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABC18920E9B4EE00B1E614 /* OfflineDownlaodCell.swift */; };
 		E2ABC18C20E9B4EE00B1E614 /* OfflineDownlaodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2ABC18A20E9B4EE00B1E614 /* OfflineDownlaodCell.xib */; };
@@ -81,6 +83,8 @@
 		E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
 		E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
+		E2AAADF720EB41F9009ED55F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		E2AAADF820EB41F9009ED55F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownloadController.swift; sourceTree = "<group>"; };
 		E2ABC18920E9B4EE00B1E614 /* OfflineDownlaodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownlaodCell.swift; sourceTree = "<group>"; };
 		E2ABC18A20E9B4EE00B1E614 /* OfflineDownlaodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfflineDownlaodCell.xib; sourceTree = "<group>"; };
@@ -304,6 +308,8 @@
 				E209A88520DCD967004A07C9 /* MoreLoginViewController.storyboard */,
 				E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */,
 				E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */,
+				E2AAADF720EB41F9009ED55F /* UserDetailViewController.swift */,
+				E2AAADF820EB41F9009ED55F /* UserDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 				E26D6ECE20DB287100CA7678 /* LaunchScreen.storyboard in Resources */,
 				E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */,
 				E2F3DC7F20E4E28200558FF8 /* SettingCell.xib in Resources */,
+				E2AAADFA20EB41F9009ED55F /* UserDetailViewController.xib in Resources */,
 				E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */,
 				E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */,
 				E25193E620DFB67500AF8B62 /* default_theme.plist in Resources */,
@@ -545,6 +552,7 @@
 			files = (
 				E2E4A9E620E4C0500048DE10 /* SettingModel.swift in Sources */,
 				E26D6F2B20DB84CC00CA7678 /* MyFisrtSectionCell.swift in Sources */,
+				E2AAADF920EB41F9009ED55F /* UserDetailViewController.swift in Sources */,
 				E26D6F2220DB6B4100CA7678 /* NetworkTool.swift in Sources */,
 				E26D6F1520DB457900CA7678 /* AppDelegate.swift in Sources */,
 				E26D6F1320DB457900CA7678 /* VideoViewController.swift in Sources */,
