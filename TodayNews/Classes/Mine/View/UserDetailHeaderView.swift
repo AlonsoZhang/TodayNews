@@ -57,23 +57,23 @@ class UserDetailHeaderView: UIView, NibLoadable {
             followersCountLabel.text = userDetail!.followersCount
             followingsCountLabel.text = userDetail!.followingsCount
 
-//            if userDetail!.top_tab.count > 0 {
-//                // 添加按钮和 tableView
-//                for (index, topTab) in userDetail!.top_tab.enumerated() {
-//                    // 添加按钮
-//                    let button = UIButton(frame: CGRect(x: CGFloat(index) * topTabButtonWidth, y: 0, width: topTabButtonWidth, height: scrollView.height))
-//                    button.setTitle(topTab.show_name, for: .normal)
-//                    button.tag = index
-//                    button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-//                    button.theme_setTitleColor("colors.black", forState: .normal)
-//                    button.theme_setTitleColor("colors.globalRedColor", forState: .selected)
-//                    button.addTarget(self, action: #selector(topTabButtonClicked), for: .touchUpInside)
-//                    scrollView.addSubview(button)
-//                    if index == 0 {
-//                        button.isSelected = true
-//                        privorButton = button
-//                    }
-//
+            if userDetail!.top_tab.count > 0 {
+                // 添加按钮和 tableView
+                for (index, topTab) in userDetail!.top_tab.enumerated() {
+                    // 添加按钮
+                    let button = UIButton(frame: CGRect(x: CGFloat(index) * topTabButtonWidth, y: 0, width: topTabButtonWidth, height: scrollView.height))
+                    button.setTitle(topTab.show_name, for: .normal)
+                    button.tag = index
+                    button.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+                    button.theme_setTitleColor("colors.black", forState: .normal)
+                    button.theme_setTitleColor("colors.globalRedColor", forState: .selected)
+                    button.addTarget(self, action: #selector(topTabButtonClicked), for: .touchUpInside)
+                    scrollView.addSubview(button)
+                    if index == 0 {
+                        button.isSelected = true
+                        privorButton = button
+                    }
+
 //                    let tableView = UITableView(frame: CGRect(x: CGFloat(index) * screenWidth, y: 0, width: screenWidth, height: bottomScrollView.height))
 //                    tableView.ym_registerCell(cell: UserDetailDongTaiCell.self)
 //                    tableView.delegate = self
@@ -87,23 +87,23 @@ class UserDetailHeaderView: UIView, NibLoadable {
 //                        scrollView.contentSize = CGSize(width: button.frame.maxX, height: scrollView.height)
 //                        bottomScrollView.contentSize = CGSize(width: tableView.frame.maxX, height: bottomScrollView.height)
 //                    }
-//                }
-//                scrollView.addSubview(indicatorView)
-//            } else {
-//                topTabHeight.constant = 0
-//                topTabView.isHidden = true
-//            }
-//
-//            layoutIfNeeded()
+                }
+                scrollView.addSubview(indicatorView)
+            } else {
+                topTabHeight.constant = 0
+                topTabView.isHidden = true
+            }
+
+            layoutIfNeeded()
         }
     }
 
     /// topTab 指示条
-//    private lazy var indicatorView: UIView = {
-//        let indicatorView = UIView(frame: CGRect(x: (topTabButtonWidth - topTabindicatorWidth) * 0.5 , y: topTabView.height - 3, width: topTabindicatorWidth, height: topTabindicatorHeight))
-//        indicatorView.theme_backgroundColor = "colors.globalRedColor"
-//        return indicatorView
-//    }()
+    private lazy var indicatorView: UIView = {
+        let indicatorView = UIView(frame: CGRect(x: (topTabButtonWidth - topTabindicatorWidth) * 0.5 , y: topTabView.height - 3, width: topTabindicatorWidth, height: topTabindicatorHeight))
+        indicatorView.theme_backgroundColor = "colors.globalRedColor"
+        return indicatorView
+    }()
     
     weak var privorButton = UIButton()
     
@@ -228,7 +228,7 @@ extension UserDetailHeaderView {
         privorButton?.isSelected = false
         button.isSelected = !button.isSelected
         UIView.animate(withDuration: 0.25, animations: {
-//            self.indicatorView.centerX = button.centerX
+            self.indicatorView.centerX = button.centerX
             self.bottomScrollView.contentOffset = CGPoint(x: CGFloat(button.tag) * screenWidth, y: 0)
         }) { (_) in
             self.privorButton = button
@@ -313,13 +313,5 @@ extension UserDetailHeaderView {
         UIView.animate(withDuration: 0.25, animations: {
             self.layoutIfNeeded()
         })
-    }
-    
-    class func headerView() -> UserDetailHeaderView {
-        return Bundle.main.loadNibNamed("\(self)", owner: nil, options: nil)?.last as! UserDetailHeaderView
-    }
-    
-    private func resetLayout() {
-        
     }
 }

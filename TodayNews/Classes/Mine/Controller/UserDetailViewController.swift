@@ -49,8 +49,8 @@ class UserDetailViewController: UIViewController {
                 self.view.layoutIfNeeded()
             } else {
                 // 赋值到 bottomView 上
-//                self.bottomView.addSubview(self.myBottomView)
-//                self.myBottomView.bottomTabs = userDetail.bottom_tab
+                self.bottomView.addSubview(self.myBottomView)
+                self.myBottomView.bottomTabs = userDetail.bottom_tab
             }
         }
         
@@ -60,6 +60,13 @@ class UserDetailViewController: UIViewController {
     fileprivate lazy var headerView: UserDetailHeaderView = {
         let headerView = UserDetailHeaderView.loadViewFromNib()
         return headerView
+    }()
+    
+    /// 懒加载 底部
+    fileprivate lazy var myBottomView: UserDetailBottomView = {
+        let myBottomView = UserDetailBottomView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 44))
+        //myBottomView.delegate = self
+        return myBottomView
     }()
 
     override var preferredStatusBarStyle: UIStatusBarStyle {

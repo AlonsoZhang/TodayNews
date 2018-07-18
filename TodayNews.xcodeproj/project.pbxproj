@@ -36,6 +36,7 @@
 		E26D6F3420DB94B700CA7678 /* MyConcernCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */; };
 		E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */; };
 		E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */; };
+		E288925520FEE31700D906F2 /* UserDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288925420FEE31700D906F2 /* UserDetailBottomView.swift */; };
 		E2AAADF920EB41F9009ED55F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAADF720EB41F9009ED55F /* UserDetailViewController.swift */; };
 		E2AAADFA20EB41F9009ED55F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AAADF820EB41F9009ED55F /* UserDetailViewController.xib */; };
 		E2ABC18820E9B41E00B1E614 /* OfflineDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */; };
@@ -87,6 +88,7 @@
 		E26D6F3220DB94B700CA7678 /* MyConcernCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCell.xib; sourceTree = "<group>"; };
 		E26D6F3520DBAAD800CA7678 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		E26D6F3720DBAAF000CA7678 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
+		E288925420FEE31700D906F2 /* UserDetailBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailBottomView.swift; sourceTree = "<group>"; };
 		E2AAADF720EB41F9009ED55F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		E2AAADF820EB41F9009ED55F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		E2ABC18720E9B41E00B1E614 /* OfflineDownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDownloadController.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				E2ABC18A20E9B4EE00B1E614 /* OfflineDownlaodCell.xib */,
 				E2EED47F20FD8D99005C6150 /* UserDetailHeaderView.swift */,
 				E2EED48120FD8DBA005C6150 /* UserDetailHeaderView.xib */,
+				E288925420FEE31700D906F2 /* UserDetailBottomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				E26D6F1320DB457900CA7678 /* VideoViewController.swift in Sources */,
 				E26D6F1220DB457900CA7678 /* HomeViewController.swift in Sources */,
 				E2ABC18E20E9B80B00B1E614 /* HomeNewsTitle.swift in Sources */,
+				E288925520FEE31700D906F2 /* UserDetailBottomView.swift in Sources */,
 				E26D6F3320DB94B700CA7678 /* MyConcernCell.swift in Sources */,
 				E26D6F1A20DB457900CA7678 /* MyTabBar.swift in Sources */,
 				E26D6F1F20DB4CFD00CA7678 /* UIKit+Extension.swift in Sources */,
