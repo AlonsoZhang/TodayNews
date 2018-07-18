@@ -13,17 +13,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserDetailHeaderView" customModule="TodayNews" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="318" height="1032"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="949"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper_profile_night" translatesAutoresizingMaskIntoConstraints="NO" id="NkO-pf-eRg">
-                    <rect key="frame" x="0.0" y="-44" width="318" height="146"/>
+                    <rect key="frame" x="0.0" y="-44" width="375" height="146"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="146" id="qQT-dm-Zo2"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-fM-aAa">
-                    <rect key="frame" x="0.0" y="102" width="318" height="242"/>
+                    <rect key="frame" x="0.0" y="102" width="375" height="242"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vio-aW-BbX" customClass="AnimatableImageView" customModule="IBAnimatable">
                             <rect key="frame" x="15" y="-36" width="72" height="72"/>
@@ -52,7 +52,7 @@
                             </constraints>
                         </imageView>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bb-L7-6Dn" customClass="AnimatableButton" customModule="IBAnimatable">
-                            <rect key="frame" x="275" y="15" width="28" height="28"/>
+                            <rect key="frame" x="332" y="15" width="28" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="28" id="3GR-O0-G1h"/>
                                 <constraint firstAttribute="width" constant="28" id="EQU-8f-Avj"/>
@@ -74,7 +74,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWK-hs-5Is" customClass="AnimatableButton" customModule="IBAnimatable">
-                            <rect key="frame" x="198" y="15" width="72" height="28"/>
+                            <rect key="frame" x="255" y="15" width="72" height="28"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.3921568627" blue="0.37254901959999998" alpha="1" colorSpace="deviceRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="28" id="Aig-3N-1S8"/>
@@ -92,7 +92,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uai-G3-ck2">
-                            <rect key="frame" x="143" y="15" width="45" height="28"/>
+                            <rect key="frame" x="200" y="15" width="45" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="45" id="19D-gT-W0N"/>
                                 <constraint firstAttribute="height" constant="28" id="Erc-Dh-EMZ"/>
@@ -106,7 +106,7 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBr-45-c73">
-                            <rect key="frame" x="0.0" y="52" width="318" height="0.0"/>
+                            <rect key="frame" x="0.0" y="52" width="375" height="0.0"/>
                             <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="deviceRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" id="04T-Pi-o1c"/>
@@ -151,7 +151,7 @@
                             </state>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvM-me-tvU">
-                            <rect key="frame" x="15" y="142" width="258" height="21"/>
+                            <rect key="frame" x="15" y="142" width="315" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="B8z-6A-wKI"/>
                             </constraints>
@@ -160,7 +160,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnL-x9-ZKk">
-                            <rect key="frame" x="273" y="139" width="30" height="28"/>
+                            <rect key="frame" x="330" y="139" width="30" height="28"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="28" id="4qd-Yc-2BU"/>
                                 <constraint firstAttribute="width" constant="30" id="Ju7-cP-jk5"/>
@@ -198,17 +198,17 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coc-Le-gId" userLabel="tapTab">
-                            <rect key="frame" x="0.0" y="201" width="318" height="41"/>
+                            <rect key="frame" x="0.0" y="201" width="375" height="41"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRh-7T-XAI" userLabel="分割线">
-                                    <rect key="frame" x="0.0" y="0.0" width="318" height="0.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
                                     <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="deviceRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="0.5" id="eaC-uc-Jhf"/>
                                     </constraints>
                                 </view>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMk-Ba-MT0">
-                                    <rect key="frame" x="0.0" y="0.5" width="318" height="40.5"/>
+                                    <rect key="frame" x="0.0" y="0.5" width="375" height="40.5"/>
                                 </scrollView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

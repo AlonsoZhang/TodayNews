@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RelationRecommendCell" customModule="TodayNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cR-Jj-1Nm" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="190"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAg-4C-jvL" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="38" y="10" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="dXh-dc-0nW"/>
+                                    <constraint firstAttribute="height" constant="66" id="luy-I2-Wop"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_maskType" value="Circle"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="all_v_avatar_star_16x16_" translatesAutoresizingMaskIntoConstraints="NO" id="skw-yD-w3X">
+                                <rect key="frame" x="85" y="57" width="19" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="WiN-cV-f3E"/>
+                                    <constraint firstAttribute="height" constant="19" id="oH3-8f-gKe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skg-G9-14h">
+                                <rect key="frame" x="0.0" y="81" width="142" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="mrg-Ng-nIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HM-fN-o9Q">
+                                <rect key="frame" x="0.0" y="104" width="142" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOR-CV-HB0" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="15" y="152" width="112" height="28"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.3921568627" blue="0.37254901959999998" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="kqm-MA-HaM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="关注"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_add_video_16x16_" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-Xy-fgA">
+                                <rect key="frame" x="60" y="155" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="BJv-Oq-QNM"/>
+                                    <constraint firstAttribute="width" constant="22" id="L1a-Ku-LxM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NOR-CV-HB0" secondAttribute="bottom" constant="10" id="0EI-wN-Waa"/>
+                            <constraint firstAttribute="trailing" secondItem="NOR-CV-HB0" secondAttribute="trailing" constant="15" id="1bW-3b-wzL"/>
+                            <constraint firstItem="skw-yD-w3X" firstAttribute="bottom" secondItem="cAg-4C-jvL" secondAttribute="bottom" id="4FY-gd-G5d"/>
+                            <constraint firstItem="NOR-CV-HB0" firstAttribute="leading" secondItem="2cR-Jj-1Nm" secondAttribute="leading" constant="15" id="Clu-zG-Qg7"/>
+                            <constraint firstAttribute="trailing" secondItem="Skg-G9-14h" secondAttribute="trailing" id="EfP-4d-JVA"/>
+                            <constraint firstItem="NOR-CV-HB0" firstAttribute="top" secondItem="2HM-fN-o9Q" secondAttribute="bottom" constant="5" id="Evu-Rf-hzS"/>
+                            <constraint firstItem="skw-yD-w3X" firstAttribute="trailing" secondItem="cAg-4C-jvL" secondAttribute="trailing" id="Gdl-XD-bcH"/>
+                            <constraint firstItem="bbo-Xy-fgA" firstAttribute="centerY" secondItem="NOR-CV-HB0" secondAttribute="centerY" id="JcA-DG-pRy"/>
+                            <constraint firstItem="bbo-Xy-fgA" firstAttribute="centerX" secondItem="NOR-CV-HB0" secondAttribute="centerX" id="KJh-gv-slw"/>
+                            <constraint firstItem="cAg-4C-jvL" firstAttribute="centerX" secondItem="2cR-Jj-1Nm" secondAttribute="centerX" id="Qpn-mk-Uii"/>
+                            <constraint firstItem="Skg-G9-14h" firstAttribute="top" secondItem="cAg-4C-jvL" secondAttribute="bottom" constant="5" id="Tmy-Oz-e7v"/>
+                            <constraint firstItem="2HM-fN-o9Q" firstAttribute="leading" secondItem="2cR-Jj-1Nm" secondAttribute="leading" id="V7l-Qc-69g"/>
+                            <constraint firstItem="2HM-fN-o9Q" firstAttribute="top" secondItem="Skg-G9-14h" secondAttribute="bottom" id="cne-sl-qnV"/>
+                            <constraint firstAttribute="trailing" secondItem="2HM-fN-o9Q" secondAttribute="trailing" id="lWw-Nw-fOx"/>
+                            <constraint firstItem="Skg-G9-14h" firstAttribute="leading" secondItem="2cR-Jj-1Nm" secondAttribute="leading" id="n07-JY-xBS"/>
+                            <constraint firstItem="cAg-4C-jvL" firstAttribute="top" secondItem="2cR-Jj-1Nm" secondAttribute="top" constant="10" id="oF5-bI-1K0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2cR-Jj-1Nm" secondAttribute="bottom" id="1MC-Zb-7zM"/>
+                <constraint firstItem="2cR-Jj-1Nm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9b2-7K-N7Z"/>
+                <constraint firstItem="2cR-Jj-1Nm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ekt-Kt-nKx"/>
+                <constraint firstAttribute="trailing" secondItem="2cR-Jj-1Nm" secondAttribute="trailing" id="kET-KW-O3X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="all_v_avatar_star_16x16_" width="16" height="16"/>
+        <image name="loading_add_video_16x16_" width="16" height="16"/>
+    </resources>
+</document>
