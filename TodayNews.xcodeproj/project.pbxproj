@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71AD87A1136F774B1BE3162F /* Pods_TodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C52817112313373E66CD675 /* Pods_TodayNews.framework */; };
+		E20665D420FDC671007EC5D1 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20665D320FDC671007EC5D1 /* UserDetail.swift */; };
 		E209A87920DC9C39004A07C9 /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A87820DC9C39004A07C9 /* MyTheme.swift */; };
 		E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = E209A87F20DC9D9B004A07C9 /* night_theme.plist */; };
 		E209A88420DCD947004A07C9 /* MoreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A88320DCD947004A07C9 /* MoreLoginViewController.swift */; };
@@ -46,6 +47,8 @@
 		E2E4A9E220E4B93E0048DE10 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */; };
 		E2E4A9E420E4BF280048DE10 /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2E4A9E320E4BF280048DE10 /* settingPlist.plist */; };
 		E2E4A9E620E4C0500048DE10 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E4A9E520E4C0500048DE10 /* SettingModel.swift */; };
+		E2EED48020FD8D99005C6150 /* UserDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EED47F20FD8D99005C6150 /* UserDetailHeaderView.swift */; };
+		E2EED48220FD8DBA005C6150 /* UserDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2EED48120FD8DBA005C6150 /* UserDetailHeaderView.xib */; };
 		E2F3DC7E20E4E28200558FF8 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F3DC7C20E4E28200558FF8 /* SettingCell.swift */; };
 		E2F3DC7F20E4E28200558FF8 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2F3DC7D20E4E28200558FF8 /* SettingCell.xib */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,7 @@
 		38229071397AAEAB1FE6EC33 /* Pods-TodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.release.xcconfig"; sourceTree = "<group>"; };
 		3C52817112313373E66CD675 /* Pods_TodayNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodayNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95FAB5EE703D3AD4C6AE70D /* Pods-TodayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodayNews/Pods-TodayNews.debug.xcconfig"; sourceTree = "<group>"; };
+		E20665D320FDC671007EC5D1 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
 		E209A87820DC9C39004A07C9 /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTheme.swift; path = TodayNews/Classes/Main/Controller/MyTheme.swift; sourceTree = SOURCE_ROOT; };
 		E209A87F20DC9D9B004A07C9 /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
 		E209A88320DCD947004A07C9 /* MoreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		E2E4A9E120E4B93E0048DE10 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E2E4A9E320E4BF280048DE10 /* settingPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
 		E2E4A9E520E4C0500048DE10 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		E2EED47F20FD8D99005C6150 /* UserDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailHeaderView.swift; sourceTree = "<group>"; };
+		E2EED48120FD8DBA005C6150 /* UserDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailHeaderView.xib; sourceTree = "<group>"; };
 		E2F3DC7C20E4E28200558FF8 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		E2F3DC7D20E4E28200558FF8 /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,6 +325,7 @@
 			children = (
 				E26D6F2320DB716300CA7678 /* MyCellModel.swift */,
 				E2E4A9E520E4C0500048DE10 /* SettingModel.swift */,
+				E20665D320FDC671007EC5D1 /* UserDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +345,8 @@
 				E2F3DC7D20E4E28200558FF8 /* SettingCell.xib */,
 				E2ABC18920E9B4EE00B1E614 /* OfflineDownlaodCell.swift */,
 				E2ABC18A20E9B4EE00B1E614 /* OfflineDownlaodCell.xib */,
+				E2EED47F20FD8D99005C6150 /* UserDetailHeaderView.swift */,
+				E2EED48120FD8DBA005C6150 /* UserDetailHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -464,6 +473,7 @@
 				E26D6F3820DBAAF000CA7678 /* NoLoginHeaderView.xib in Resources */,
 				E209A88120DC9D9B004A07C9 /* night_theme.plist in Resources */,
 				E25193E620DFB67500AF8B62 /* default_theme.plist in Resources */,
+				E2EED48220FD8DBA005C6150 /* UserDetailHeaderView.xib in Resources */,
 				E26D6F2820DB75BA00CA7678 /* MyOtherCell.xib in Resources */,
 				E2ABC18C20E9B4EE00B1E614 /* OfflineDownlaodCell.xib in Resources */,
 				E2E4A9E420E4BF280048DE10 /* settingPlist.plist in Resources */,
@@ -551,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2E4A9E620E4C0500048DE10 /* SettingModel.swift in Sources */,
+				E20665D420FDC671007EC5D1 /* UserDetail.swift in Sources */,
 				E26D6F2B20DB84CC00CA7678 /* MyFisrtSectionCell.swift in Sources */,
 				E2AAADF920EB41F9009ED55F /* UserDetailViewController.swift in Sources */,
 				E26D6F2220DB6B4100CA7678 /* NetworkTool.swift in Sources */,
@@ -565,6 +576,7 @@
 				E26D6F1420DB457900CA7678 /* HuoshanViewController.swift in Sources */,
 				E26D6F2420DB716300CA7678 /* MyCellModel.swift in Sources */,
 				E2F3DC7E20E4E28200558FF8 /* SettingCell.swift in Sources */,
+				E2EED48020FD8D99005C6150 /* UserDetailHeaderView.swift in Sources */,
 				E26D6F2720DB75BA00CA7678 /* MyOtherCell.swift in Sources */,
 				E26D6F1920DB457900CA7678 /* MyNavigationController.swift in Sources */,
 				E26D6F3620DBAAD800CA7678 /* NoLoginHeaderView.swift in Sources */,

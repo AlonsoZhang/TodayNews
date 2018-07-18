@@ -1,13 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailViewController" customModule="TodayNews" customModuleProvider="target">
             <connections>
+                <outlet property="bottomView" destination="TrR-XB-iKO" id="LPx-6u-hH6"/>
+                <outlet property="bottomViewBottom" destination="gZP-Ba-cNA" id="s5o-6f-K6N"/>
+                <outlet property="bottomViewHeight" destination="xSy-ZM-Yvn" id="ZEu-G3-UzF"/>
+                <outlet property="scrollView" destination="NHn-cq-e9D" id="XPw-IA-kSq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,8 +22,29 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHn-cq-e9D">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrR-XB-iKO">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xSy-ZM-Yvn"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="NHn-cq-e9D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0oi-HO-SsI"/>
+                <constraint firstItem="NHn-cq-e9D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9vb-ua-Vgc"/>
+                <constraint firstAttribute="trailing" secondItem="TrR-XB-iKO" secondAttribute="trailing" id="KBT-uu-0bZ"/>
+                <constraint firstItem="TrR-XB-iKO" firstAttribute="top" secondItem="NHn-cq-e9D" secondAttribute="bottom" id="fW7-6P-9vc"/>
+                <constraint firstAttribute="trailing" secondItem="NHn-cq-e9D" secondAttribute="trailing" id="g8k-VB-kLo"/>
+                <constraint firstAttribute="bottom" secondItem="TrR-XB-iKO" secondAttribute="bottom" id="gZP-Ba-cNA"/>
+                <constraint firstItem="TrR-XB-iKO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hic-Tr-zPK"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="97.5"/>
         </view>
     </objects>
 </document>
