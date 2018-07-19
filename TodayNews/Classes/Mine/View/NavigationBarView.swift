@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import IBAnimatable
 
 class NavigationBarView: UIView, NibLoadable {
@@ -37,6 +36,7 @@ class NavigationBarView: UIView, NibLoadable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        theme_backgroundColor = "colors.cellBackgroundColor"
         returnButton.theme_setImage("images.personal_home_back_white_24x24_", forState: .normal)
         moreButton.theme_setImage("images.new_morewhite_titlebar_22x22_", forState: .normal)
         concernButton.setTitle("关注", for: .normal)
@@ -83,16 +83,16 @@ extension NavigationBarView {
     @IBAction func concernButtonClicked(_ sender: AnimatableButton) {
         if sender.isSelected { // 已经关注，点击则取消关注
             // 已关注用户，取消关注
-            NetworkTool.loadRelationUnfollow(user_id: userDetail!.user_id, completionHandler: { (_) in
+            NetworkTool.loadRelationUnfollow(userId: userDetail!.user_id, completionHandler: { (_) in
                 sender.isSelected = !sender.isSelected
-                self.concernButton.theme_backgroundColor = "colors.globalRedColor"
+                sender.theme_backgroundColor = "colors.globalRedColor"
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: NavigationBarConcernButtonClicked), object: self, userInfo: ["isSelected": sender.isSelected])
             })
         } else { // 未关注，点击则关注这个用户
             // 点击关注按钮，关注用户
-            NetworkTool.loadRelationFollow(user_id: userDetail!.user_id, completionHandler: { (_) in
+            NetworkTool.loadRelationFollow(userId: userDetail!.user_id, completionHandler: { (_) in
                 sender.isSelected = !sender.isSelected
-                self.concernButton.theme_backgroundColor = "colors.userDetailFollowingConcernBtnBgColor"
+                sender.theme_backgroundColor = "colors.userDetailFollowingConcernBtnBgColor"
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: NavigationBarConcernButtonClicked), object: self, userInfo: ["isSelected": sender.isSelected])
             })
         }

@@ -10,7 +10,7 @@ import UIKit
 import IBAnimatable
 import Kingfisher
 
-class RelationRecommendCell: UICollectionViewCell, RegisterCellOrNib {
+class RelationRecommendCell: UICollectionViewCell, RegisterCellFromNib {
     
     var userCard: UserCard? {
         didSet {
@@ -54,7 +54,7 @@ class RelationRecommendCell: UICollectionViewCell, RegisterCellOrNib {
         loadingImageView.layer.add(animation, forKey: nil)
         if sender.isSelected { // 已经关注，点击则取消关注
             // 已关注用户，取消关注
-            NetworkTool.loadRelationUnfollow(user_id: userCard!.user.info.user_id, completionHandler: { (_) in
+            NetworkTool.loadRelationUnfollow(userId: userCard!.user.info.user_id, completionHandler: { (_) in
                 sender.isSelected = !sender.isSelected
                 self.concernButton.theme_backgroundColor = "colors.globalRedColor"
                 self.loadingImageView.layer.removeAllAnimations()
@@ -63,7 +63,7 @@ class RelationRecommendCell: UICollectionViewCell, RegisterCellOrNib {
             })
         } else { // 未关注，点击则关注这个用户
             // 点击关注按钮，关注用户
-            NetworkTool.loadRelationFollow(user_id: userCard!.user.info.user_id, completionHandler: { (_) in
+            NetworkTool.loadRelationFollow(userId: userCard!.user.info.user_id, completionHandler: { (_) in
                 sender.isSelected = !sender.isSelected
                 self.concernButton.theme_backgroundColor = "colors.userDetailFollowingConcernBtnBgColor"
                 self.loadingImageView.layer.removeAllAnimations()

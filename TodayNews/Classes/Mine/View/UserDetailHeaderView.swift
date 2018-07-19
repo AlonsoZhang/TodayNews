@@ -12,16 +12,16 @@ import Kingfisher
 
 class UserDetailHeaderView: UIView, NibLoadable {
     
-//    /// 动态数据 数组
-//    var dongtais = [UserDetailDongtai]() {
-//        didSet {
-//            if bottomScrollView.subviews.count > 0 {
-//                let tableView = bottomScrollView.subviews[0] as! UITableView
-//                tableView.reloadData()
-//            }
-//        }
-//    }
-//
+    /// 动态数据 数组
+    var dongtais = [UserDetailDongtai]() {
+        didSet {
+            if bottomScrollView.subviews.count > 0 {
+                let tableView = bottomScrollView.subviews[0] as! UITableView
+                tableView.reloadData()
+            }
+        }
+    }
+    
     var userDetail: UserDetail? {
         didSet {
             backgroundImageView.kf.setImage(with: URL(string: userDetail!.bg_img_url)!)
@@ -56,7 +56,7 @@ class UserDetailHeaderView: UIView, NibLoadable {
             recommendButtonTrailing.constant = 10.0
             followersCountLabel.text = userDetail!.followersCount
             followingsCountLabel.text = userDetail!.followingsCount
-
+            
             if userDetail!.top_tab.count > 0 {
                 // 添加按钮和 tableView
                 for (index, topTab) in userDetail!.top_tab.enumerated() {
@@ -73,31 +73,31 @@ class UserDetailHeaderView: UIView, NibLoadable {
                         button.isSelected = true
                         privorButton = button
                     }
-
-//                    let tableView = UITableView(frame: CGRect(x: CGFloat(index) * screenWidth, y: 0, width: screenWidth, height: bottomScrollView.height))
-//                    tableView.ym_registerCell(cell: UserDetailDongTaiCell.self)
-//                    tableView.delegate = self
-//                    tableView.dataSource = self
-//                    tableView.rowHeight = 130
-//                    tableView.isScrollEnabled = false
-//                    tableView.showsVerticalScrollIndicator = false
-//                    tableView.tableFooterView = UIView()
-//                    bottomScrollView.addSubview(tableView)
-//                    if index == userDetail!.top_tab.count - 1 {
-//                        scrollView.contentSize = CGSize(width: button.frame.maxX, height: scrollView.height)
-//                        bottomScrollView.contentSize = CGSize(width: tableView.frame.maxX, height: bottomScrollView.height)
-//                    }
+                    
+                    let tableView = UITableView(frame: CGRect(x: CGFloat(index) * screenWidth, y: 0, width: screenWidth, height: bottomScrollView.height))
+                    tableView.ym_registerCell(cell: UserDetailDongTaiCell.self)
+                    tableView.delegate = self
+                    tableView.dataSource = self
+                    tableView.rowHeight = 130
+                    tableView.isScrollEnabled = false
+                    tableView.showsVerticalScrollIndicator = false
+                    tableView.tableFooterView = UIView()
+                    bottomScrollView.addSubview(tableView)
+                    if index == userDetail!.top_tab.count - 1 {
+                        scrollView.contentSize = CGSize(width: button.frame.maxX, height: scrollView.height)
+                        bottomScrollView.contentSize = CGSize(width: tableView.frame.maxX, height: bottomScrollView.height)
+                    }
                 }
                 scrollView.addSubview(indicatorView)
             } else {
                 topTabHeight.constant = 0
                 topTabView.isHidden = true
             }
-
+            
             layoutIfNeeded()
         }
     }
-
+    
     /// topTab 指示条
     private lazy var indicatorView: UIView = {
         let indicatorView = UIView(frame: CGRect(x: (topTabButtonWidth - topTabindicatorWidth) * 0.5 , y: topTabView.height - 3, width: topTabindicatorWidth, height: topTabindicatorHeight))
@@ -163,10 +163,10 @@ class UserDetailHeaderView: UIView, NibLoadable {
     @IBOutlet weak var bottomScrollView: UIScrollView!
     
     /// 自定义的推荐 view
-//    fileprivate lazy var relationRecommendView: RelationRecommendView = {
-//        let relationRecommendView = RelationRecommendView.loadViewFromNib()
-//        return relationRecommendView
-//    }()
+    fileprivate lazy var relationRecommendView: RelationRecommendView = {
+        let relationRecommendView = RelationRecommendView.loadViewFromNib()
+        return relationRecommendView
+    }()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -188,7 +188,7 @@ class UserDetailHeaderView: UIView, NibLoadable {
         descriptionLabel.theme_textColor = "colors.black"
         descriptionLabel.theme_textColor = "colors.black"
         toutiaohaoImageView.theme_image = "images.toutiaohao"
-//        NotificationCenter.default.addObserver(self, selector: #selector(receivedConcernButtonClicked), name: NSNotification.Name(rawValue: NavigationBarConcernButtonClicked), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(receivedConcernButtonClicked), name: NSNotification.Name(rawValue: NavigationBarConcernButtonClicked), object: nil)
     }
     
     deinit {
@@ -196,29 +196,29 @@ class UserDetailHeaderView: UIView, NibLoadable {
     }
 }
 
-//// MARK: - UITableViewDelegate, UITableViewDataSource
-//extension UserDetailHeaderView: UITableViewDelegate, UITableViewDataSource {
-//
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if scrollView.contentOffset.y < 0 {
-//            for subview in bottomScrollView.subviews {
-//                let tableView = subview as! UITableView
-//                tableView.isScrollEnabled = false
-//            }
-//        }
-//    }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return dongtais.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.ym_dequeueReusableCell(indexPath: indexPath) as UserDetailDongTaiCell
-//        cell.dongtai = dongtais[indexPath.row]
-//        return cell
-//    }
-//
-//}
+// MARK: - UITableViewDelegate, UITableViewDataSource
+extension UserDetailHeaderView: UITableViewDelegate, UITableViewDataSource {
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y < 0 {
+            for subview in bottomScrollView.subviews {
+                let tableView = subview as! UITableView
+                tableView.isScrollEnabled = false
+            }
+        }
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dongtais.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.ym_dequeueReusableCell(indexPath: indexPath) as UserDetailDongTaiCell
+        cell.dongtai = dongtais[indexPath.row]
+        return cell
+    }
+
+}
 
 // MARK: - 按钮点击事件
 extension UserDetailHeaderView {
@@ -283,12 +283,12 @@ extension UserDetailHeaderView {
                     self.layoutIfNeeded()
                 }, completion: { (_) in
                     // 点击了关注按钮，就会出现相关推荐数据
-//                    NetworkTool.loadRelationUserRecommend(userId: self.userDetail!.user_id, completionHandler: { (userCards) in
-//                        self.recommendView.addSubview(self.relationRecommendView)
-//                        self.relationRecommendView.userCards = userCards
-//                    })
+                    NetworkTool.loadRelationUserRecommend(userId: self.userDetail!.user_id, completionHandler: { (userCards) in
+                        self.recommendView.addSubview(self.relationRecommendView)
+                        self.relationRecommendView.userCards = userCards
+                    })
                 })
-                //NotificationCenter.default.post(name: NSNotification.Name(rawValue: UserDetailHeaderViewButtonClicked), object: self, userInfo: ["isSelected": sender.isSelected])
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: UserDetailHeaderViewButtonClicked), object: self, userInfo: ["isSelected": sender.isSelected])
             })
         }
     }
@@ -307,8 +307,8 @@ extension UserDetailHeaderView {
     @IBAction func unfoldButtonClicked() {
         unfoldButton.isHidden = true
         unfoldButtonWidth.constant = 0
-//        relationRecommendView.labelHeight.constant = 0
-//        relationRecommendView.layoutIfNeeded()
+        relationRecommendView.labelHeight.constant = 0
+        relationRecommendView.layoutIfNeeded()
         descriptionLabelHeight.constant = userDetail!.descriptionHeight!
         UIView.animate(withDuration: 0.25, animations: {
             self.layoutIfNeeded()

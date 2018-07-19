@@ -270,15 +270,19 @@
                         <constraint firstItem="9Bb-L7-6Dn" firstAttribute="top" secondItem="bhV-fM-aAa" secondAttribute="top" constant="15" id="ykH-wJ-wNU"/>
                     </constraints>
                 </view>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFl-kb-vEw">
-                    <rect key="frame" x="45" y="396" width="257" height="605"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFl-kb-vEw">
+                    <rect key="frame" x="0.0" y="344" width="375" height="605"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="wFl-kb-vEw" firstAttribute="top" secondItem="bhV-fM-aAa" secondAttribute="bottom" id="47d-AJ-wQH"/>
                 <constraint firstItem="bhV-fM-aAa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7Qf-0w-wUi"/>
+                <constraint firstAttribute="bottom" secondItem="wFl-kb-vEw" secondAttribute="bottom" id="8Wn-MQ-hDF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wFl-kb-vEw" secondAttribute="trailing" id="AiI-yH-2lO"/>
+                <constraint firstItem="wFl-kb-vEw" firstAttribute="top" secondItem="bhV-fM-aAa" secondAttribute="bottom" id="HlL-5e-AUK"/>
                 <constraint firstItem="NkO-pf-eRg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SyX-Gt-yHD"/>
+                <constraint firstItem="wFl-kb-vEw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UaZ-B3-jHQ"/>
                 <constraint firstItem="wFl-kb-vEw" firstAttribute="top" secondItem="bhV-fM-aAa" secondAttribute="bottom" id="W2q-W4-yls"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bhV-fM-aAa" secondAttribute="trailing" id="e1o-ZI-Jvz"/>
                 <constraint firstItem="NkO-pf-eRg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-44" id="hCZ-Wh-jYf"/>
@@ -294,6 +298,7 @@
                 <outlet property="avatarImageView" destination="Vio-aW-BbX" id="Mzt-Da-RPJ"/>
                 <outlet property="backgroundImageView" destination="NkO-pf-eRg" id="Bgw-1v-Bln"/>
                 <outlet property="baseView" destination="bhV-fM-aAa" id="tmJ-E2-hCy"/>
+                <outlet property="bottomScrollView" destination="wFl-kb-vEw" id="CAt-rr-ERZ"/>
                 <outlet property="concernButton" destination="HWK-hs-5Is" id="o8h-rX-tle"/>
                 <outlet property="descriptionLabel" destination="FvM-me-tvU" id="nE6-72-WpO"/>
                 <outlet property="descriptionLabelHeight" destination="B8z-6A-wKI" id="2g7-zN-aJ7"/>

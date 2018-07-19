@@ -67,6 +67,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="concernButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="IMA-J9-Su4"/>
+                                </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_add_video_16x16_" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-Xy-fgA">
                                 <rect key="frame" x="60" y="155" width="22" height="22"/>
@@ -110,6 +113,15 @@
                 <constraint firstAttribute="trailing" secondItem="2cR-Jj-1Nm" secondAttribute="trailing" id="kET-KW-O3X"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="avatarImageView" destination="cAg-4C-jvL" id="kLG-Bc-Cgc"/>
+                <outlet property="baseView" destination="2cR-Jj-1Nm" id="Cee-71-giP"/>
+                <outlet property="concernButton" destination="NOR-CV-HB0" id="mYr-Xv-7kP"/>
+                <outlet property="loadingImageView" destination="bbo-Xy-fgA" id="qkZ-NG-TcW"/>
+                <outlet property="nameLabel" destination="Skg-G9-14h" id="HcJ-wd-KYd"/>
+                <outlet property="recommendReasonLabel" destination="2HM-fN-o9Q" id="ddq-A7-WAz"/>
+                <outlet property="vImageView" destination="skw-yD-w3X" id="yT2-Vc-xW7"/>
+            </connections>
         </collectionViewCell>
     </objects>
     <resources>

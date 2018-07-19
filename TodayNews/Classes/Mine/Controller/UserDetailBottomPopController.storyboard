@@ -14,27 +14,35 @@
             <objects>
                 <viewController storyboardIdentifier="UserDetailBottomPopController" id="jx3-aS-JyF" customClass="UserDetailBottomPopController" customModule="TodayNews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="F1u-zd-q37"/>
-                        <viewControllerLayoutGuide type="bottom" id="0at-re-tJU"/>
+                        <viewControllerLayoutGuide type="top" id="Vd7-2j-jhG"/>
+                        <viewControllerLayoutGuide type="bottom" id="JWK-qC-4pL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nRu-rQ-lLc">
+                    <view key="view" contentMode="scaleToFill" id="rwx-yf-iYp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popup_118x58_" translatesAutoresizingMaskIntoConstraints="NO" id="LwD-jG-mHJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_118x58_" translatesAutoresizingMaskIntoConstraints="NO" id="zkJ-xd-2KS">
                                 <rect key="frame" x="-10" y="20" width="395" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1K-dK-BKX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I7K-Is-f3i">
                                 <rect key="frame" x="0.0" y="30" width="375" height="622"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I7K-Is-f3i" firstAttribute="leading" secondItem="rwx-yf-iYp" secondAttribute="leading" id="CYB-C9-YUh"/>
+                            <constraint firstItem="zkJ-xd-2KS" firstAttribute="leading" secondItem="rwx-yf-iYp" secondAttribute="leading" constant="-10" id="FkL-uC-05S"/>
+                            <constraint firstItem="JWK-qC-4pL" firstAttribute="top" secondItem="zkJ-xd-2KS" secondAttribute="bottom" id="LMe-Kl-EKh"/>
+                            <constraint firstItem="JWK-qC-4pL" firstAttribute="top" secondItem="I7K-Is-f3i" secondAttribute="bottom" constant="15" id="RF3-AU-AsA"/>
+                            <constraint firstAttribute="trailing" secondItem="zkJ-xd-2KS" secondAttribute="trailing" constant="-10" id="VhN-EO-4ST"/>
+                            <constraint firstAttribute="trailing" secondItem="I7K-Is-f3i" secondAttribute="trailing" id="WfE-VB-X5Y"/>
+                            <constraint firstItem="I7K-Is-f3i" firstAttribute="top" secondItem="Vd7-2j-jhG" secondAttribute="bottom" constant="10" id="vWV-RK-sJI"/>
+                            <constraint firstItem="zkJ-xd-2KS" firstAttribute="top" secondItem="Vd7-2j-jhG" secondAttribute="bottom" id="xZ6-U2-Wn4"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="E1K-dK-BKX" id="6KP-Ih-Qms"/>
+                        <outlet property="tableView" destination="I7K-Is-f3i" id="6fg-md-7v8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ulM-Ra-Bgh" userLabel="First Responder" sceneMemberID="firstResponder"/>

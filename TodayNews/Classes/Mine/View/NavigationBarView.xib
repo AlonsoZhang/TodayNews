@@ -111,7 +111,7 @@
         </view>
     </objects>
     <resources>
-        <image name="new_morewhite_titlebar_22x22_" width="16" height="16"/>
+        <image name="new_morewhite_titlebar_22x22_" width="22" height="22"/>
         <image name="personal_home_back_white_24x24_" width="24" height="24"/>
     </resources>
 </document>

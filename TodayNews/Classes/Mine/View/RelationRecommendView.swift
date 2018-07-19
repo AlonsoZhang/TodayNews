@@ -8,14 +8,49 @@
 
 import UIKit
 
-class RelationRecommendView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class RelationRecommendView: UIView, NibLoadable {
+    
+    var userCards = [UserCard]()
+    
+    @IBOutlet weak var labelHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        theme_backgroundColor = "colors.cellBackgroundColor"
+        collectionView.collectionViewLayout = RelationRecommendFlowLayout()
+        collectionView.ym_registerCell(cell: RelationRecommendCell.self)
+        collectionView.delegate = self
+        collectionView.dataSource  = self
     }
-    */
+    
+}
 
+extension RelationRecommendView: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return userCards.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.ym_dequeueReusableCell(indexPath: indexPath) as RelationRecommendCell
+        cell.userCard = userCards[indexPath.item]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+}
+
+class RelationRecommendFlowLayout: UICollectionViewFlowLayout {
+    override func prepare() {
+        super.prepare()
+        scrollDirection = .horizontal
+        itemSize = CGSize(width: 142, height: 190)
+        minimumLineSpacing = 10
+        sectionInset = UIEdgeInsetsMake(0, 10, 0, 10)
+    }
 }
